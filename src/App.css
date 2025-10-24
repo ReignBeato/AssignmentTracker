@@ -1,27 +1,27 @@
 
 
 /* Page layout */
-.login-page {
+/* .login-page {
   display: flex;
   height: 100vh;
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
   background-color: #f3f3f5;
-}
+} */
 
 /* Left side image */
-.left-image {
+/* .left-image {
   flex: 0.9;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   min-height: 300px;
   
-}
+} */
 
 /* Right side panel */
-.right-panel {
+/* .right-panel {
   width: 400px;
   background: #ffffff;
   border-radius: 20px;
@@ -31,10 +31,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 /* Logo section */
-.logo-section {
+/* .logo-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,15 +48,15 @@
 }
 
 /* Login title */
-.login-title {
+/* .login-title {
   color: #6d488a;
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 20px;
-}
+} */ 
 
 /* Input fields */
-.input-group {
+/* .input-group {
   text-align: left;
   margin-bottom: 15px;
 }
@@ -75,20 +75,20 @@
   border: 1px solid #c8a2c8;
   background-color: #f4edf9;
   outline: none;
-}
+} */
 
 /* Forget password link */
-.forget-link {
+/* .forget-link {
   display: block;
   text-align: right;
   text-decoration: none;
   font-size: 13px;
   color: #6d488a;
   margin-bottom: 20px;
-}
+} */
 
 /* Login button */
-.login-btn {
+/* .login-btn {
   width: 100%;
   background-color: #6d488a;
   color: white;
@@ -102,10 +102,10 @@
 
 .login-btn:hover {
   background-color: #8a63b2;
-}
+} */
 
 /* Register text */
-.signup-text {
+/* .signup-text {
   font-size: 14px;
   margin-top: 20px;
 }
@@ -114,23 +114,23 @@
   color: #6d488a;
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
 
 
 /* Password field with an eye button inside */
-.password-field {
+/* .password-field {
   position: relative;
 }
 
 .password-field input {
   padding-right: 44px; /* space for the eye button */
-}
+/* } */
 
-.toggle-visibility {
+/* .toggle-visibility {
   position: absolute;
   right: 10px;
-  top: 32px;              /* aligns with input height; tweak if needed */
+  top: 32px;              aligns with input height; tweak if needed
   height: 28px;
   width: 32px;
   border: none;
@@ -144,6 +144,188 @@
 }
 
 .toggle-visibility:focus {
-  outline: 2px solid #c8a2c8; /* visible focus for accessibility */
+  outline: 2px solid #c8a2c8; visible focus for accessibility
   border-radius: 6px;
+} */ 
+
+
+
+
+
+
+
+
+
+/* ---------- PAGE LAYOUT ---------- */
+.login-page {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  height: 100vh;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #f3f3f5;
+}
+
+/* LEFT IMAGE PANEL */
+.left-image {
+  flex: 0.8;
+  max-width: 900px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  min-height: 550px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* RIGHT PANEL (LOGIN BOX) */
+.right-panel {
+  width: 480px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* CONTENT INSIDE LOGIN BOX */
+.panel-content {
+  width: 88%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ---------- LOGO ---------- */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ---------- TITLE ---------- */
+.login-title {
+  color: #6d488a;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: 12px 48px 12px 16px;
+  border-radius: 26px;
+  border: 1px solid #c8a2c8;
+  background-color: #f4edf9;
+  outline: none;
+}
+
+/* ---------- PASSWORD FIELD ---------- */
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  width: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ---------- LINKS & BUTTONS ---------- */
+.forget-link {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-size: 13px;
+  color: #6d488a;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #6d488a;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #8a63b2;
+}
+
+/* ---------- REGISTER TEXT ---------- */
+.signup-text {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-text a {
+  color: #6d488a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+/* FOR DIFFERENT SCREENS  */
+@media (max-width: 1024px) {
+  .login-page {
+    flex-direction: column;       /* stack vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-image {
+    width: 90%;
+    max-width: none;
+    height: 300px;
+    border-radius: 16px;
+  }
+
+  .right-panel {
+    width: 90%;
+    margin-top: 20px;
+  }
 }
